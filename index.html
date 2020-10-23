@@ -10,26 +10,26 @@
 <body>
     <h1>RidBooks</h1>
     <p class="txt">Summary Of Your Favorite Books</p>
-    <form action="">
-        <label for="isbn">ISBN :</label>
-        <input type="search" name="isbn" id="isbn">
-    </form>
+    <label for="isbn">ISBN :</label>
+    <input type="text" name="isbn" id="isbn">
+    <input type="submit" value="Search" id="button">
     <div class="cont">
         <div class="content">
             <div class="title">
                 <p class="title">Title :</p>
-                <p class="title-content"></p>
+                <p class="title-content" id="title"></p>
             </div>
             <div class="author">
                 <p class="author">Author :</p>
-                <p class="author-content"></p>
+                <p class="author-content" id="author"></p>
             </div>
             <div class="shalaye">
                 <p class="desc">Description :</p>
-                <p class="summary"></p>
+                <p class="summary" id="description"></p>
             </div>
         </div>
     </div>
     <script src="./assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>
