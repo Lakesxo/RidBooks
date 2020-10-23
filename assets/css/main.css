@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+body {
+    text-align: center;
+    background: rgba(255, 169, 135, 0.04);
+}
+h1, form, p.txt {
+    margin-top: 20px;
+    color: #480403;
+}
+h1 {
+    position: relative;
+}
+h1::after {
+    position: absolute;
+    content: '';
+    height: 6px;
+    bottom: 10px;
+    background: #FFA987;
+    left: 44%;
+    right: 0;
+    z-index: -1;
+    width: 12%;
+}
+.content {
+    margin-top: 50px;
+    border: 2px solid #480403;
+    width: 60%;
+    padding: 20px 20px;
+    border-radius: 7px;
+    background-color: #ffffff;
+}
+.shalaye, .title, .author {
+    margin-bottom: 20px;
+}
+.title, .author {
+    display: flex;
+    justify-content: flex-start;
+}
+.shalaye {
+    text-align: left;
+}
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="search"]{
+    border: 2px solid #FFA987;
+    padding: 5px 7px;
+    width: 200px;
+}
+
+/* Media Query */
+@media all and (max-width: 480px){
+    h1::after { 
+        width: 44%;
+        left: 28%;
+    }
+    .content {
+        width: 80%;
+    }
+}
