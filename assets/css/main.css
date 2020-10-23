@@ -15,7 +15,8 @@ h1, form, p.txt {
     color: #480403;
 }
 p.txt {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
 }
 h1 {
     position: relative;
@@ -77,6 +78,12 @@ p.title, p.author {
         left: 28%;
     }
     .content {
-        width: 80%;
+        width: 90%;
+        margin-bottom: 150px;
+        padding-right: 0;
+        padding-left: 10px;
+    }
+    .title, .shalaye, .author {
+        margin-bottom: 10px;
     }
 }
