@@ -17,5 +17,12 @@ getISBN =()=> {
     .catch(err => console.log(err))
 }
 
-button.addEventListener('click', getISBN)
+enterKeyPress = (e) => {
+    if (e.which == 13){
+        getISBN()
+    }
+}
+
+button.addEventListener('click', getISBN);
+search.addEventListener('keypress', enterKeyPress)
 
