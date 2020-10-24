@@ -1,9 +1,11 @@
+// Elements needed from the HTML
 let search = document.querySelector('#isbn');
 let button = document.querySelector('#button');
 let title = document.querySelector('#title');
 let author = document.querySelector('#author');
 let description = document.querySelector('#description')
 
+// Get details of the book with input ISBN
 getISBN =()=> {
     axios({
         method: 'get',
@@ -17,12 +19,14 @@ getISBN =()=> {
     .catch(err => console.log(err))
 }
 
+// Function to allow the enter key fire the getISBN function
 enterKeyPress = (e) => {
     if (e.which == 13){
         getISBN()
     }
 }
 
+// Event listeners
 button.addEventListener('click', getISBN);
 search.addEventListener('keypress', enterKeyPress)
 
